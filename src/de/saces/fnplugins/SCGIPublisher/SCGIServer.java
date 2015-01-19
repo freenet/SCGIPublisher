@@ -106,10 +106,10 @@ public class SCGIServer extends AbstractServer implements AbstractService {
 	}
 
 	private class PageMaker {
-		private final boolean initOK;
-		private final String pageHeader;
-		private final String pageBody;
-		private final String pageFooter;
+		private boolean initOK;
+		private String pageHeader;
+		private String pageBody;
+		private String pageFooter;
 
 		public PageMaker(String filename) {
 			if (filename == null || filename.isEmpty()) {
