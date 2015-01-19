@@ -258,7 +258,12 @@ public class SCGIServer extends AbstractServer implements AbstractService {
 	public void setServerpath(String serverpath) {
 		if (isRunning())
 			throw new IllegalStateException("you cant set serverpath on a running server.");
-		mServerPath = serverpath;
+		if (!serverpath.endsWith("/")) {
+		    mServerPath = serverpath + "/";
+		}
+		else {
+		    mServerPath = serverpath;
+		}
 	}
 
 	public void setFrontPage(String frontpage) {
