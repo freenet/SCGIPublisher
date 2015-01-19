@@ -437,11 +437,8 @@ public class SCGIServer extends AbstractServer implements AbstractService {
 	}
 
 	private String getServerPath(HashMap<String, String> env) {
-		if (mServerPath != null) {
-			return mServerPath;
-		}
 		StringBuilder sb = new StringBuilder();
-		uriMaker(env, sb);
+		getServerPath(env, sb);
 		return sb.toString();
 	}
 
