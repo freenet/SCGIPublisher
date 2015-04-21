@@ -35,7 +35,7 @@
 bindTo=127.0.0.1
 port=1400
 allowedHosts=127.0.0.1
-keysets=nerd,xkcd,social,heartbleed,feral,toadflog,fetchpull,tech,death,seeker,denissalem,scheme,dragonwisdom,drakrss,file,flip,fmsguide,fnfs,freemail,freesite,freesitehowto,gpl,heal,hgvsgit,irc,kubuntu,publish,stats,saces,bombe,sone,xor,jsite,bloc,freenetfunding1,freenetfunding2,fixlinklength,jammingxkeyscore,ircssk
+keysets=nerd,freenetproject,babshare,xkcd,social,heartbleed,feral,toadflog,fetchpull,tech,death,seeker,denissalem,scheme,dragonwisdom,drakrss,file,flip,fmsguide,fnfs,freemail,freesite,freesitehowto,gpl,heal,hgvsgit,irc,kubuntu,publish,stats,saces,bombe,sone,soneusk,xor,jsite,bloc,freenetfunding1,freenetfunding2,fixlinklength,jammingxkeyscore,ircssk,techssk,egitfreenet,drakrss2,fip,meltdown,deadlines,freenetteam,mathmltest,downloadsite,guiledocs,gleichschaltung,decorrespondentmetadata,netzpolitikmetadaten,schemeland,proglang,tao,statsource,jim,eibriel,updatesh,mempo,rfreeflog,ceno,cenoplugin,dickpic,connectspeak,pluginbare,exitthematrix,shoeshop,pyfreenethg,simplesitetooltest,sitetool,bombeusk,xorusk,statsusk,jsiteusk,jsite2,blocusk
 enabled=true
 serverpath=https://d6.gnutella2.info/freenet
 ; serverpath=http://d6.or.gs/freenet
@@ -64,17 +64,41 @@ begin=USK@yGvITGZzrY1vUZK-4AaYLgcjZ7ysRqNTMfdcO8gS-LY,-ab5bJVD3Lp-LXEQqBAhJpMKrK
 ; any [S|U]SK with this routing and crypto key
 derived=SSK@MYLAnId-ZEyXhDGGbYOa1gOtkZZrFNTXjFl1dibLj9E,Xpu27DoAKKc8b0718E-ZteFrGqCYROe7XBBJI57pB4M,AQACAAE/
 
+[Keyset_shoeshop]
+begin=USK@MYLAnId-ZEyXhDGGbYOa1gOtkZZrFNTXjFl1dibLj9E,Xpu27DoAKKc8b0718E-ZteFrGqCYROe7XBBJI57pB4M,AQACAAE/Shoeshop/2/
+
+[Keyset_pyfreenethg]
+begin=USK@MYLAnId-ZEyXhDGGbYOa1gOtkZZrFNTXjFl1dibLj9E,Xpu27DoAKKc8b0718E-ZteFrGqCYROe7XBBJI57pB4M,AQACAAE/PyFreenetHg/31/
+
+[Keyset_simplesitetooltest]
+begin=USK@MYLAnId-ZEyXhDGGbYOa1gOtkZZrFNTXjFl1dibLj9E,Xpu27DoAKKc8b0718E-ZteFrGqCYROe7XBBJI57pB4M,AQACAAE/SimpleSiteTool-test/6/
+
+[Keyset_sitetool]
+begin=USK@MYLAnId-ZEyXhDGGbYOa1gOtkZZrFNTXjFl1dibLj9E,Xpu27DoAKKc8b0718E-ZteFrGqCYROe7XBBJI57pB4M,AQACAAE/SiteToolPlugin-trunk/1/
+
 [Keyset_bombe]
 ; key of bombe. He is responsible.
 derived=SSK@e3myoFyp5avg6WYN16ImHri6J7Nj8980Fm~aQe4EX1U,QvbWT0ImE0TwLODTl7EoJx2NBnwDxTbLTE6zkB-eGPs,AQACAAE/
+
+[Keyset_bombeusk]
+; key of bombe. He is responsible.
+begin=USK@e3myoFyp5avg6WYN16ImHri6J7Nj8980Fm~aQe4EX1U,QvbWT0ImE0TwLODTl7EoJx2NBnwDxTbLTE6zkB-eGPs,AQACAAE/bombe/113/
 
 [Keyset_sone]
 ; key of bombe. He is responsible.
 derived=SSK@nwa8lHa271k2QvJ8aa0Ov7IHAV-DFOCFgmDt3X6BpCI,DuQSUZiI~agF8c-6tjsFFGuZ8eICrzWCILB60nT8KKo,AQACAAE/
 
+[Keyset_soneusk]
+; key of bombe. He is responsible.
+begin=USK@nwa8lHa271k2QvJ8aa0Ov7IHAV-DFOCFgmDt3X6BpCI,DuQSUZiI~agF8c-6tjsFFGuZ8eICrzWCILB60nT8KKo,AQACAAE/sone/63/
+
 [Keyset_xor]
 ; well known.
 derived=SSK@QeTBVWTwBldfI-lrF~xf0nqFVDdQoSUghT~PvhyJ1NE,OjEywGD063La2H-IihD7iYtZm3rC0BP6UTvvwyF5Zh4,AQACAAE/
+
+[Keyset_xorusk]
+; well known.
+begin=USK@QeTBVWTwBldfI-lrF~xf0nqFVDdQoSUghT~PvhyJ1NE,OjEywGD063La2H-IihD7iYtZm3rC0BP6UTvvwyF5Zh4,AQACAAE/flog/23/
 
 
 [Keyset_nerd]
@@ -85,10 +109,20 @@ begin=USK@tiYrPDh~fDeH5V7NZjpp~QuubaHwgks88iwlRXXLLWA,yboLMwX1dChz8fWKjmbdtl38HR
 ; Identity known
 derived=SSK@pxtehd-TmfJwyNUAW2Clk4pwv7Nshyg21NNfXcqzFv4,LTjcTWqvsq3ju6pMGe9Cqb3scvQgECG81hRdgj5WO4s,AQACAAE/statistics/393/
 
+[Keyset_statsusk]
+; Identity known
+begin=USK@pxtehd-TmfJwyNUAW2Clk4pwv7Nshyg21NNfXcqzFv4,LTjcTWqvsq3ju6pMGe9Cqb3scvQgECG81hRdgj5WO4s,AQACAAE/statistics/393/
+
 [Keyset_jsite]
 ; Identity known
 derived=SSK@e3myoFyp5avg6WYN16ImHri6J7Nj8980Fm~aQe4EX1U,QvbWT0ImE0TwLODTl7EoJx2NBnwDxTbLTE6zkB-eGPs,AQACAAE/jSite/20/
 
+[Keyset_jsiteusk]
+; Identity known
+begin=USK@e3myoFyp5avg6WYN16ImHri6J7Nj8980Fm~aQe4EX1U,QvbWT0ImE0TwLODTl7EoJx2NBnwDxTbLTE6zkB-eGPs,AQACAAE/jSite/20/
+
+[Keyset_jsite2]
+begin=USK@1waTsw46L9-JEQ8yX1khjkfHcn--g0MlMsTlYHax9zQ,oYyxr5jyFnaTsVGDQWk9e3ddOWGKnqEASxAk08MHT2Y,AQACAAE/jSite/2/
 
 [Keyset_fetchpull]
 ; Identity known, but only one site
@@ -97,6 +131,10 @@ begin=USK@sCzfyxndzgtfzoPRUQExz4Y6wNmLDzOpW04umOoIBAk,~X5tIffdcfNWPIKZ2tHgSGPqIk
 [Keyset_tech]
 ; Identity known, but only one site on the key
 begin=USK@6~ZDYdvAgMoUfG6M5Kwi7SQqyS-gTcyFeaNN1Pf3FvY,OSOT4OEeg4xyYnwcGECZUX6~lnmYrZsz05Km7G7bvOQ,AQACAAE/Technophob/117/
+
+[Keyset_techssk]
+; Identity known, but only one site on the key
+derived=SSK@6~ZDYdvAgMoUfG6M5Kwi7SQqyS-gTcyFeaNN1Pf3FvY,OSOT4OEeg4xyYnwcGECZUX6~lnmYrZsz05Km7G7bvOQ,AQACAAE/
 
 [Keyset_dragonwisdom]
 ; looks harmless
@@ -117,6 +155,14 @@ begin=USK@oZ89lerr95jMR3691beV6YaB0NHufZSZn~yK80tTSvg,~WHO0gaREIvBFlmST71EefrMH~
 [Keyset_bloc]
 ; long time good site
 derived=SSK@pT4aZRngVeuvE77aetTnGopC3QNuesLl8ielr22VE6Q,VnVS7QscZZLJnXBR2L-KsY7Va5KbaAJZB3DCmGNSLE0,AQACAAE/
+
+[Keyset_blocusk]
+; long time good site
+begin=USK@pT4aZRngVeuvE77aetTnGopC3QNuesLl8ielr22VE6Q,VnVS7QscZZLJnXBR2L-KsY7Va5KbaAJZB3DCmGNSLE0,AQACAAE/flog/6/
+
+;[Keyset_blocusk2014]
+; long time good site
+;begin=USK@pT4aZRngVeuvE77aetTnGopC3QNuesLl8ielr22VE6Q,VnVS7QscZZLJnXBR2L-KsY7Va5KbaAJZB3DCmGNSLE0,AQACAAE/Sidou%27s%20flog/53/
 
 [Keyset_death]
 ; long time good site
@@ -190,6 +236,105 @@ begin=USK@cI~w2hrvvyUa1E6PhJ9j5cCoG1xmxSooi7Nez4V2Gd4,A3ArC3rrJBHgAJV~LlwY9kgxM8
 ; long time good site
 begin=USK@KEs1hmyNBsiN0snDXqDlphPLfQceVpxd3-cQtPOO8wM,il~HAeEpxQpoCxvrLhBH-fvLnx9feAs~j3zo1VMLCS4,AQACAAE/draksites/732/
 
+[Keyset_drakrss2]
+; lost key to the old site
+begin=USK@y24LRrc2iTFC6eZNvi8uyNC7PBmAe8QAw51XIduangQ,85Y56-on-J9iezqatRyLhsPD5GAU96zCpw1T2Fcvdik,AQACAAE/draksites/11/
+
 [Keyset_heartbleed]
 ; essential information
 begin=USK@008hTMgO3-Pg2P4NXEW2bueogtN2rPshNrs2eDDZD8E,sh-qCtrd~bXF3o4q-C5Juiw8TBfOhBfY9k4rLZmTrPQ,AQACAAE/heartbleed-bug/0/
+
+[Keyset_egitfreenet]
+; git via freenet
+begin=USK@VoFcfs8Y3VQfwD66ZgXAb4HBiS~WJe8w9mOy2hS9Mh8,OS6~bhX8LHxMLw-sruBkWDeACo-fg4yBZqueMPVj1Uc,AQACAAE/egit-freenet/15/
+
+[Keyset_fip]
+; freenet information portal
+begin=USK@D~O-C~so9RSMoJ~FWp9BHmE21npXmg0LzVTh-4xWoXU,bpMTwpHvzDmWzIOHSBkQZrdePdW2QhouvcWnh7KqFA8,AQACAAE/FIP/12/
+
+[Keyset_meltdown]
+; known inserter
+begin=USK@zqoqAGuQJ1k-gsnu1ezE61hUtRsm52JLFUZHs0FjGuE,89hzii6qISaktLFkC0mZI-Y5ZQHBs3yZW6J5yv3OiOs,AQACAAE/Freenet_Meltdown/2/
+
+[Keyset_deadlines]
+begin=USK@um4cEaaGWlgdAK8gAFDJrqY2eiSM3fHxiPfMTu89coE,m2rG6gU~ISukN3S3qJtNwVxXr0giCtHvu8BPz605FxE,AQACAAE/winterface-deadlines/0/
+
+[Keyset_freenetteam]
+begin=USK@Y1VvV~-oT2GvDNFFP7X~iOn~7xStPg4d0UxMmSWJ79s,5BVjDJ0sTJxMUt35EdwYLGWDQIVdcSe5VE6~~Tgwxi0,AQACAAE/freenet-team/1
+
+[Keyset_mathmltest]
+begin=USK@uSNc77wmxFOyyMNO~inEt6WNQ2eiFMZ~OktLWB4GMPg,sqZwp4uSizWZ21AnuJW3r4ZfpDhTVbo5uURyKkoL8BE,AQACAAE/mathmltest/3
+
+[Keyset_downloadsite]
+begin=USK@1adAFc2yEX72mNb7vl25sfTV8IZaVaBz2-45W-JbJ1M,V6KxLh-cHddwMh8a0ORYMlf1snlZXjdWLLkJ9Xht4ho,AQACAAE/download-web-site/4
+
+[Keyset_guiledocs]
+begin=USK@KbwedP5onPNStariw4E9j~qelOOvQHG2N1pguT1yWRk,ruBdZ44Gvujlr~VM2psp38fkURiRFMoxtZ~6Ln3GY-0,AQACAAE/guiledocs/3
+
+[Keyset_gleichschaltung]
+begin=USK@K4WYLTIEgWj53Vo2zH-jWKH0M9iIFQWKa~I~9geZ0II,pFS8zKGxjQK6RprZGC5QilCbjRHnNNBaMJ9pHy8SgHU,AQACAAE/gleichschaltung/3
+
+[Keyset_decorrespondentmetadata]
+begin=USK@KBGReHCMW6KkYq~-jLzFX58wocZVLCima8VB-h3ifU4,Nt3MIN379yDdgBxo4~NLPLaM2ibcKojj~0fbuI5tmYI,AQACAAE/decorrespondent-metadata/2
+
+[Keyset_netzpolitikmetadaten]
+begin=USK@-oY0QbPi9hkX5zjU7J4Gylqr9w6tbX-BUjpUOBabUvk,EIY8ONv2hGDyxF7zDga9bQxg3hgrfC7KeCNq2GlrAv4,AQACAAE/netzpolitik-metadaten/2
+
+[Keyset_schemeland]
+begin=USK@6OmyqhRT7bmpy0o5mFTCIQdUGBWI~FSBhwJk7wR8vkQ,nEVTgA51HePPvVwU5ZxYspe5gNmNcBfYaZeJGWAZSDc,AQACAAE/adventures-schemeland/0
+
+[Keyset_proglang]
+begin=USK@PHlZsmE4hHFqwa19bKqcUus8FLx8bZm8lztl5HrH3~Y,SrN8cGIB5azwp5tTxNdvoNWGa2cm7ta0iwyuhK1YFK0,AQACAAE/programming-languages/2
+
+[Keyset_tao]
+begin=USK@j-zM7GyTxi~XExgkgsn0H~6cHnVX50riaIoqmHU4hUI,vsz2NcYcImuntjjP9qWE2T7MB0QCvhdqh1oyvTg66LY,AQACAAE/tao-of-programming/2
+
+[Keyset_statsource]
+begin=USK@VEisUwKGwjplcbjv~q6KuOJ-oC-mIgKaBb~xz84M-gg,9JdlbO6MyQzTUiQRXiQx9X-EVUlii1h5ySuBtOyB5Cs,AQACAAE/add-statistics-source/0
+
+[Keyset_jim]
+begin=USK@6yN0t10p6Ly-f32tEnLCBctXGwRVWb8NhPx8f3LIZcM,BkYYnRh7LETTaVq0rcXg-CRPFoQpG7wt~E-R9PlS7rQ,AQACAAE/TravisBrown/57
+
+[Keyset_eibriel]
+; about free blender material
+begin=USK@OVtO9SVeW0e0lu0pEWRu8FkRe7AP49tdEMjkfr9Ciis,iJztz4XZJuGd0Gu5vBzOEsl-yGyGdFbe-lR4CteRgdA,AQACAAE/Eibriel/5/
+
+[Keyset_updatesh]
+; checked
+strict=CHK@fd6b579rrpyM~-nXazx5Mu792quWu1s~VnZNNdi8p9U,C-pS-mXhDNcUeG7LoBv0orce6KQGkamT4yrNyxn64ws,AAMC--8/update.sh
+
+[Keyset_freenetproject]
+; mirrored by me
+begin=USK@0iU87PXyodL2nm6kCpmYntsteViIbMwlJE~wlqIVvZ0,nenxGvjXDElX5RIZxMvwSnOtRzUKJYjoXEDgkhY6Ljw,AQACAAE/freenetproject-mirror/41/
+
+[Keyset_mempo]
+; rfreeman
+begin=USK@oRy7ltZLJM-w-kcOBdiZS1pAA8P-BxZ3BPiiqkmfk0E,6a1KFG6S-Bwp6E-MplW52iH~Y3La6GigQVQDeMjI6rg,AQACAAE/deb.mempo.org/7/
+
+[Keyset_rfreeflog]
+; rfreeman
+begin=USK@M~sqhez6iybF7U6zG-kw4FQNdkSEXHjQ-2QSJrRLhF0,YgGPWpZhsGmAjLgsxARHFK-xMdRqN21dZGn7o2Fg08I,AQACAAE/rfree-blog/0/
+
+[Keyset_babshare]
+; mine
+begin=USK@sUm3oJISSEU4pl2Is9qa1eRoCLyz6r2LPkEqlXc3~oc,yBEbf-IJrcB8Pe~gAd53DEEHgbugUkFSHtzzLqnYlbs,AQACAAE/random_babcom/5/
+
+[Keyset_ceno]
+; https://github.com/misaakidis/ceno/blob/master/INSTALL.md
+begin=USK@fjUYuQXoRDqvpFQIzMBOJ61D587--Jn1SEV3ceDSuo8,B9c5qsOprzgvms1vnhRLoe1os64VH3PUHbGqHtFhBcY,AQACAAE/CENO/0/
+
+[Keyset_cenoplugin]
+; https://github.com/misaakidis/ceno/blob/master/INSTALL.md
+begin=USK@kWKE67nhHNp6C-lgD5QtpL5qnIgmsnM6B5i7xxJGXIQ,UhZYJ2R6egIAjdMGAQbsjPcos1~CIJ~CbUKjpuUlwXA,AQACAAE/CENO-plugin/0/
+
+[Keyset_dickpic]
+strict=CHK@qCrzT5QU7ccpWJhIaEoQb~aGOqgGlOy58PDrut25P3E,WvsdoTA5ygrAOtyw~CduQJf6jJy~x9-JytSBDNooXKk,AAMC--8/freenet-protects-your-dickpic-vs-nsa.gif
+
+[Keyset_connectspeak]
+begin=USK@m0VSUXnWj45Q3TqlkinMd167KKHld-kmXBxooBDDaio,9T2QAmZwdTymR48lB8-RX7Lzp2AG0EzNSJmDMWzFyII,AQACAAE/connect-speak-freely/0/
+
+[Keyset_pluginbare]
+begin=USK@xqbzQkEGFnFfZH3LG~ut8bjV51o~3nrIXMN3ld5Qjs0,SThdqkHICKxLZvKzMcfK4w04Y4ykcE1~lmQiskpsVqw,AQACAAE/freenet-plugin-bare/-1/
+
+[Keyset_exitthematrix]
+begin=USK@RvhWIn5fFCOWLOtwEqqsVZezycPa49XCX2-JNzpcpPE,d4xQUEQe4E519kY5dynUwJpgpuZ5AQTjoPQ~~2DfF08,AQACAAE/exitmatrix/1/
