@@ -197,6 +197,8 @@ public class SCGIServer extends AbstractServer implements AbstractService {
 			body.append("</p><p>");
 			body.append("To get the full satisfaction install <a href=\"http://freenetproject.org\">Freenet</a> and request the Freenet URIs on your own node without the limits here.");
 			body.append("</p><p>");
+			body.append("If you access this over Tor or i2p, please install <a href=\"http://freenetproject.org\">Freenet</a> now. Right now you are wasting doubled resources. It takes less than 5 minutes to get to a state where you can access these pages.");
+			body.append("</p><p>");
 			body.append("This proxy is created by the <a href=\"https://github.com/saces/SCGIPublisher/\">SCGIPublisher-plugin</a>.");
 			body.append("</p><p>Allowed Freenet URIs:<ul>\n");
 
