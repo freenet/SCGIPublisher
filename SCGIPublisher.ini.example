@@ -35,7 +35,7 @@
 bindTo=127.0.0.1
 port=1400
 allowedHosts=127.0.0.1
-keysets=nerd,freenetproject,babshare,xkcd,social,heartbleed,feral,toadflog,fetchpull,tech,death,seeker,denissalem,scheme,dragonwisdom,drakrss,file,flip,fmsguide,fnfs,freemail,freesite,freesitehowto,gpl,heal,hgvsgit,irc,kubuntu,publish,stats,saces,bombe,sone,soneusk,xor,jsite,bloc,freenetfunding1,freenetfunding2,fixlinklength,jammingxkeyscore,ircssk,techssk,egitfreenet,drakrss2,fip,meltdown,deadlines,freenetteam,mathmltest,downloadsite,guiledocs,gleichschaltung,decorrespondentmetadata,netzpolitikmetadaten,schemeland,proglang,tao,statsource,jim,eibriel,updatesh,mempo,rfreeflog,ceno,cenoplugin,dickpic,connectspeak,pluginbare,exitthematrix,shoeshop,pyfreenethg,simplesitetooltest,sitetool,bombeusk,xorusk,statsusk,jsiteusk,jsite2,blocusk
+keysets=nerd,freenetproject,babshare,xkcd,social,heartbleed,feral,toadflog,fetchpull,tech,death,seeker,denissalem,scheme,dragonwisdom,file,flip,fmsguide,fnfs,freemail,freesite,freesitehowto,gpl,heal,hgvsgit,irc,kubuntu,publish,stats,saces,bombe,sone,soneusk,xor,jsite,bloc,freenetfunding1,freenetfunding2,fixlinklength,jammingxkeyscore,ircssk,techssk,egitfreenet,drakrss2,drakrss2ssk,fip,meltdown,deadlines,freenetteam,mathmltest,downloadsite,guiledocs,gleichschaltung,decorrespondentmetadata,netzpolitikmetadaten,schemeland,proglang,tao,statsource,jim,eibriel,updatesh,mempo,rfreeflog,ceno,cenoplugin,dickpic,connectspeak,pluginbare,exitthematrix,shoeshop,pyfreenethg,simplesitetooltest,sitetool,bombeusk,xorusk,statsusk,jsiteusk,jsite2,blocusk,fritter,moodysmdd,xonk,whygpl,tbgof,bof,bofacceptnn,bluish
 enabled=true
 serverpath=https://d6.gnutella2.info/freenet
 ; serverpath=http://d6.or.gs/freenet
@@ -240,6 +240,10 @@ begin=USK@KEs1hmyNBsiN0snDXqDlphPLfQceVpxd3-cQtPOO8wM,il~HAeEpxQpoCxvrLhBH-fvLnx
 ; lost key to the old site
 begin=USK@y24LRrc2iTFC6eZNvi8uyNC7PBmAe8QAw51XIduangQ,85Y56-on-J9iezqatRyLhsPD5GAU96zCpw1T2Fcvdik,AQACAAE/draksites/11/
 
+[Keyset_drakrss2ssk]
+; lost key to the old site
+begin=SSK@y24LRrc2iTFC6eZNvi8uyNC7PBmAe8QAw51XIduangQ,85Y56-on-J9iezqatRyLhsPD5GAU96zCpw1T2Fcvdik,AQACAAE/draksites-383/
+
 [Keyset_heartbleed]
 ; essential information
 begin=USK@008hTMgO3-Pg2P4NXEW2bueogtN2rPshNrs2eDDZD8E,sh-qCtrd~bXF3o4q-C5Juiw8TBfOhBfY9k4rLZmTrPQ,AQACAAE/heartbleed-bug/0/
@@ -338,3 +342,28 @@ begin=USK@xqbzQkEGFnFfZH3LG~ut8bjV51o~3nrIXMN3ld5Qjs0,SThdqkHICKxLZvKzMcfK4w04Y4
 
 [Keyset_exitthematrix]
 begin=USK@RvhWIn5fFCOWLOtwEqqsVZezycPa49XCX2-JNzpcpPE,d4xQUEQe4E519kY5dynUwJpgpuZ5AQTjoPQ~~2DfF08,AQACAAE/exitmatrix/1/
+
+[Keyset_fritter]
+begin=USK@cF9ctaSzA8w2JAfEqmIlN49tfrPdz2Q5M68m1m5r9W0,NQiPGX7tNcaXVRXljGJnFlKhnf0eozNQsb~NwmBAJ4k,AQACAAE/Fritter-site/2/
+
+[Keyset_moodysmdd]
+begin=USK@hgfX3gqEIPbCS1MdNUQRdxi0JxMyU3XI6zvjbUZB2Fo,UA0e9HGhaciSGUCsFQEqtWepZcrX95foK39D2or7v7Y,AQACAAE/moodysmdd/0/
+
+[Keyset_xonk]
+begin=USK@EXXsTPu5sr4WVof5OI72P8MlsZRXba~hPeAjmLO9vlA,fNOvzPjdHSCMHtcRMFAAnvVi9AP9ubEi148LkqKJrPM,AQACAAE/xonk/2/
+
+[Keyset_whygpl]
+begin=USK@2YxhzBGGNbowakO93JG0D9WqFFRDYvLZM278LJtt9n8,~1ea9AKlu1iaAhdKLwQO5MU~TGPuAT~yZhRpvFQCXtk,AQACAAE/pro-gpl/0/
+
+[Keyset_tbgof]
+begin=USK@e3myoFyp5avg6WYN16ImHri6J7Nj8980Fm~aQe4EX1U,QvbWT0ImE0TwLODTl7EoJx2NBnwDxTbLTE6zkB-eGPs,AQACAAE/tbgof/2/
+
+[Keyset_bof]
+begin=USK@2PktPfXYLYJ4Ra0tOG3aWRbBhPwr~uCbsLN8TMu4s50,BNvgtnRqAliOqfHK4R1QzILri4BI1A7DvUmTI44rHio,AQACAAE/bof/2/
+
+[Keyset_bofacceptnn]
+begin=CHK@0E-Dthde~ZhagtDWQi6of8R0by1FwHc98YPZE5ZN1JU,MIH858TeqJN5qt~SKlCcUwZvVP9AykW5WXnrGLL7Qyo,AAIC--8
+
+[Keyset_bluish]
+begin=USK@1ORdIvjL2H1bZblJcP8hu2LjjKtVB-rVzp8mLty~5N4,8hL85otZBbq0geDsSKkBK4sKESL2SrNVecFZz9NxGVQ,AQACAAE/bluishcoder/18/
+
