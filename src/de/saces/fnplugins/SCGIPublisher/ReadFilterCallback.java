@@ -73,6 +73,29 @@ public class ReadFilterCallback implements FilterCallback {
 			strippedBaseURI = baseURI;
 	}
 
+	public String makeURIAbsolute(String uri) throws URISyntaxException{
+		return baseURI.resolve(URIPreEncoder.encodeURI(uri).normalize()).toASCIIString();
+	}
+
+
+	@Override
+	public String processURI(String u, String overrideType, String forceSchemeHostAndPort, boolean inline)
+			throws CommentException {
+		URI uri;
+		String filtered;
+		try {
+			filtered = processURI(makeURIAbsolute(u), overrideType, true, inline);
+			uri = URIPreEncoder.encodeURI(filtered).normalize();
+		} catch (URISyntaxException e1) {
+			if(logMINOR) Logger.minor(this, "Failed to parse URI: "+e1);
+			throw new CommentException(l10n("couldNotParseURIWithError", "error", e1.getMessage()));
+		}
+		if (uri.getHost() == null) {
+			return forceSchemeHostAndPort + filtered;
+		}
+		return filtered;
+	}
+
 	public String processURI(String u, String overrideType) throws CommentException {
 		return processURI(u, overrideType, false, false);
 	}
