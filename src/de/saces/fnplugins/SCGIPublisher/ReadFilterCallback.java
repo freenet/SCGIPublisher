@@ -90,6 +90,10 @@ public class ReadFilterCallback implements FilterCallback {
 	//  fragment      = *( pchar / "/" / "?" )
 	private static final String FRAGMENT   = "(" + PCHAR + "|\\/|\\?)*";
 
+    public String processURI(String u, String overrideType, String forceSchemeHostAndPort, boolean inline) throws CommentException {
+        return processURI(u, overrideType, true, inline);
+    }
+    
 	public String processURI(String u, String overrideType, boolean noRelative, boolean inline) throws CommentException {
 		//System.out.println("Process uri: '" + u +"', overrideType="+overrideType+", noRelative="+noRelative+", inline="+inline);
 		String uri = XprocessURI(u, overrideType, noRelative, inline);

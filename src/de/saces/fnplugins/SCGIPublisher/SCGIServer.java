@@ -410,7 +410,7 @@ public class SCGIServer extends AbstractServer implements AbstractService {
 		Bucket fOut = bucketFactory.makeBucket(-1);
 		try {
 			ReadFilterCallback rfc = new ReadFilterCallback(baseURI, null, getServerPath(env));
-			fs = ContentFilter.filter(fr.asBucket().getInputStream(), fOut.getOutputStream(), fr.getMimeType(), null, rfc);
+			fs = ContentFilter.filter(fr.asBucket().getInputStream(), fOut.getOutputStream(), fr.getMimeType(), null, null, rfc);
 		} catch (UnsafeContentTypeException e) {
 			if (logDEBUG) Logger.debug(this, "Error: "+e.getLocalizedMessage(), e);
 			StringBuilder buf = new StringBuilder(1024);
